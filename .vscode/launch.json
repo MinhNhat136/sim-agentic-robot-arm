@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Chay file hien tai nhu mot script standalone (tu tao SimulationApp) bang Python cua Isaac Sim.
+            // Dung cho script tu tao SimulationApp, vi du src/sim/scenes/export_observations.py.
+            // Khong dung cho src/sim/scenes/setup/*.py - chung can Isaac Sim dang mo (Ctrl+Alt+R de gui sang).
+            "name": "Isaac Sim: Standalone (file hien tai)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "python": "E:/isaacsim/kit/python/python.exe",
+            "env": {
+                "RESOURCE_NAME": "IsaacSim",
+                "CARB_APP_PATH": "E:/isaacsim/kit",
+                "ISAAC_PATH": "E:/isaacsim",
+                "EXP_PATH": "E:/isaacsim/apps",
+                "PYTHONPATH": "E:/isaacsim/site;${workspaceFolder}/src/sim/scenes"
+            }
+        },
+        {
+            // Gan debugger vao Isaac Sim dang chay. Can bat extension omni.kit.debug.vscode
+            // trong Isaac Sim (Window > Extensions), mac dinh lang nghe o cong 3000.
+            "name": "Isaac Sim: Attach (cong 3000)",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 3000
+            },
+            "justMyCode": false
+        }
+    ]
+}

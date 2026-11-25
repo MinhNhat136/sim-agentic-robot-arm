@@ -1,0 +1,613 @@
+{
+  "scene": "sim/scenes/franka_pick_table.usda",
+  "isaac_sim": "6.0.1",
+  "created": "2026-11-08 01:34",
+  "label_map": {
+    "ground": 0,
+    "table": 2,
+    "robot": 3,
+    "robot_stand": 4,
+    "mustard_bottle": 101,
+    "red_mug": 102,
+    "red_block": 103,
+    "blue_block": 104,
+    "tomato_soup_can": 105,
+    "grey_bin": 106
+  },
+  "observations": [
+    {
+      "id": "L0_table_cam",
+      "camera": "table_cam",
+      "layout": "L0",
+      "seed": null,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L0_wrist_cam",
+      "camera": "wrist_cam",
+      "layout": "L0",
+      "seed": null,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L1_table_cam",
+      "camera": "table_cam",
+      "layout": "L1",
+      "seed": 1,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L1_wrist_cam",
+      "camera": "wrist_cam",
+      "layout": "L1",
+      "seed": 1,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L2_table_cam",
+      "camera": "table_cam",
+      "layout": "L2",
+      "seed": 2,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L2_wrist_cam",
+      "camera": "wrist_cam",
+      "layout": "L2",
+      "seed": 2,
+      "visible_objects": [
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L3_table_cam",
+      "camera": "table_cam",
+      "layout": "L3",
+      "seed": 3,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "red_block",
+        "blue_block",
+        "tomato_soup_can",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    },
+    {
+      "id": "L3_wrist_cam",
+      "camera": "wrist_cam",
+      "layout": "L3",
+      "seed": 3,
+      "visible_objects": [
+        "mustard_bottle",
+        "red_mug",
+        "blue_block",
+        "grey_bin"
+      ],
+      "depth_valid_frac": 1.0
+    }
+  ],
+  "checks": {
+    "L0_table_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 2056,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0188
+        },
+        "red_mug": {
+          "pixels": 2501,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.015
+        },
+        "red_block": {
+          "pixels": 1137,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0167
+        },
+        "blue_block": {
+          "pixels": 1205,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0162
+        },
+        "tomato_soup_can": {
+          "pixels": 1871,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0228
+        },
+        "grey_bin": {
+          "pixels": 29095,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0251
+        }
+      }
+    },
+    "L0_wrist_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 2694,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0232
+        },
+        "red_mug": {
+          "pixels": 4991,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0079
+        },
+        "red_block": {
+          "pixels": 0,
+          "visible": false
+        },
+        "blue_block": {
+          "pixels": 0,
+          "visible": false
+        },
+        "tomato_soup_can": {
+          "pixels": 2665,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0404
+        },
+        "grey_bin": {
+          "pixels": 28968,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0941
+        }
+      }
+    },
+    "L1_table_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 1833,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0193
+        },
+        "red_mug": {
+          "pixels": 3288,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0144
+        },
+        "red_block": {
+          "pixels": 1048,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0152
+        },
+        "blue_block": {
+          "pixels": 773,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0175
+        },
+        "tomato_soup_can": {
+          "pixels": 2508,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0235
+        },
+        "grey_bin": {
+          "pixels": 29095,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0251
+        }
+      }
+    },
+    "L1_wrist_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 902,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": false,
+          "center_outside_image": true,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0356
+        },
+        "red_mug": {
+          "pixels": 0,
+          "visible": false
+        },
+        "red_block": {
+          "pixels": 1854,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0188
+        },
+        "blue_block": {
+          "pixels": 1307,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0216
+        },
+        "tomato_soup_can": {
+          "pixels": 429,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": false,
+          "center_outside_image": true,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0412
+        },
+        "grey_bin": {
+          "pixels": 28968,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0941
+        }
+      }
+    },
+    "L2_table_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 2188,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0184
+        },
+        "red_mug": {
+          "pixels": 3037,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.016
+        },
+        "red_block": {
+          "pixels": 944,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0143
+        },
+        "blue_block": {
+          "pixels": 1156,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0156
+        },
+        "tomato_soup_can": {
+          "pixels": 2084,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0229
+        },
+        "grey_bin": {
+          "pixels": 29095,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0251
+        }
+      }
+    },
+    "L2_wrist_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 0,
+          "visible": false
+        },
+        "red_mug": {
+          "pixels": 0,
+          "visible": false
+        },
+        "red_block": {
+          "pixels": 1654,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.017
+        },
+        "blue_block": {
+          "pixels": 288,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": false,
+          "center_outside_image": true,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0273
+        },
+        "tomato_soup_can": {
+          "pixels": 3384,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0374
+        },
+        "grey_bin": {
+          "pixels": 28968,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0941
+        }
+      }
+    },
+    "L3_table_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 2066,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0173
+        },
+        "red_mug": {
+          "pixels": 3099,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0149
+        },
+        "red_block": {
+          "pixels": 1085,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0165
+        },
+        "blue_block": {
+          "pixels": 843,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0167
+        },
+        "tomato_soup_can": {
+          "pixels": 2740,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0245
+        },
+        "grey_bin": {
+          "pixels": 29095,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0251
+        }
+      }
+    },
+    "L3_wrist_cam": {
+      "pass_": true,
+      "per_object": {
+        "mustard_bottle": {
+          "pixels": 1147,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": false,
+          "center_outside_image": true,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0295
+        },
+        "red_mug": {
+          "pixels": 1397,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": false,
+          "center_outside_image": true,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.039
+        },
+        "red_block": {
+          "pixels": 0,
+          "visible": false
+        },
+        "blue_block": {
+          "pixels": 1569,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": true,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0189
+        },
+        "tomato_soup_can": {
+          "pixels": 0,
+          "visible": false
+        },
+        "grey_bin": {
+          "pixels": 28968,
+          "visible": true,
+          "frac_points_in_box": 1.0,
+          "center_projects_into_mask": true,
+          "center_outside_image": false,
+          "center_occluded": false,
+          "center_check_ok": true,
+          "centroid_offset_m": 0.0941
+        }
+      }
+    }
+  },
+  "summary": "8/8 observations pass camera-convention checks"
+}
